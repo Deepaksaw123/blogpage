@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Saw - Portfolio</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101010;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #222;
+            padding: 25px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 { color: #ffbf00; }
+
+        nav { margin-top: 15px; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #ffbf00; }
+
+        section {
+            max-width: 900px;
+            min-height: 100vh;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        h2 {
+            color: #ffbf00;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        #home { text-align: center; padding-top: 120px; }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .project-photo {
+            width: 300px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ffbf00;
+            color: black;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        ul { margin-left: 25px; }
+
+        .project {
+            background: #222;
+            border: 1px solid #444;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .project h3 { color: #ffbf00; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #333;
+            color: #ffbf00;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+        }
+
+        label { margin-top: 15px; margin-bottom: 5px; }
+
+        input, textarea {
+            padding: 12px;
+            background: #222;
+            border: 1px solid #555;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 150px;
+            padding: 12px;
+            margin-top: 20px;
+            background: #ffbf00;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background: #222;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Deepak Saw</h1>
+    <p>Frontend Developer | CSE Student</p>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <!-- First image -->
+    <img
+        class="profile-photo"
+        src="deepakphoto.jpeg"
+        alt="Laptop showing a web development workspace"
+    >
+
+    <h2>Welcome to My Portfolio</h2>
+
+    <p>
+        Hello! I am Deepak Saw, a Computer Science Engineering
+        student interested in Web Development and Full Stack Development.
+    </p>
+
+    <a href="#projects" class="button">View My Projects</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <!-- Second image -->
+    <img
+        class="project-photo"
+        src="deepakphoto.jpeg"
+        alt="Computer screen displaying web development code"
+    >
+
+    <p>
+        I am a Computer Science Engineering student passionate
+        about creating websites and learning modern web technologies.
+    </p>
+
+    <h3>My Skills</h3>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js - Learning</li>
+        <li>Node.js - Learning</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+        <h3>Weather App</h3>
+        <p>
+            A weather application created using HTML, CSS,
+            JavaScript and OpenWeather API.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Myntra Clone</h3>
+        <p>
+            A frontend e-commerce website inspired by Myntra.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>
+            A personal portfolio website created using HTML and CSS.
+        </p>
+    </div>
+
+    <h2>My Top 3 Favorite Movies</h2>
+
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Movie</th>
+            <th>Genre</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Hanuman Ansh</td>
+            <td>Neem karoli baba</td>
+            <td>2026</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Mirzapur</td>
+            <td>Dabangai</td>
+            <td>2026</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>MS Dhoni: The Untold Story</td>
+            <td>Biography / Sports</td>
+            <td>2016</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <p>Fill out the form below to get in touch with me.</p>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject"
+               placeholder="Enter subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"
+                  rows="6" placeholder="Enter your message"
+                  required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Deepak Saw. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
